@@ -1,8 +1,8 @@
-
-
 const express = require("express");
+const cors =require('cors')
 const app = express();
 app.use(express.json());
+app.use(cors())
 
 const user = [
     { "attendence": 96, "uid": 108444, "sub": 14, "bonus": 20, name: "amit" },
